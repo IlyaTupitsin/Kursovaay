@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace курсовая_работа
 {
@@ -16,5 +17,21 @@ namespace курсовая_работа
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        { 
+            this.Hide();
+            Form3 f3 = new Form3();
+            f3.ShowDialog();
+        }
+
+        
     }
 }
