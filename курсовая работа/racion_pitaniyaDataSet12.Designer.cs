@@ -20,17 +20,17 @@ namespace курсовая_работа {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("racion_pitaniyaDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("racion_pitaniyaDataSet12")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class racion_pitaniyaDataSet : global::System.Data.DataSet {
+    public partial class racion_pitaniyaDataSet12 : global::System.Data.DataSet {
         
-        private razdelDataTable tablerazdel;
+        private productDataTable tableproduct;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public racion_pitaniyaDataSet() {
+        public racion_pitaniyaDataSet12() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace курсовая_работа {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected racion_pitaniyaDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected racion_pitaniyaDataSet12(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace курсовая_работа {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["razdel"] != null)) {
-                    base.Tables.Add(new razdelDataTable(ds.Tables["razdel"]));
+                if ((ds.Tables["product"] != null)) {
+                    base.Tables.Add(new productDataTable(ds.Tables["product"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace курсовая_работа {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public razdelDataTable razdel {
+        public productDataTable product {
             get {
-                return this.tablerazdel;
+                return this.tableproduct;
             }
         }
         
@@ -127,7 +127,7 @@ namespace курсовая_работа {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            racion_pitaniyaDataSet cln = ((racion_pitaniyaDataSet)(base.Clone()));
+            racion_pitaniyaDataSet12 cln = ((racion_pitaniyaDataSet12)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace курсовая_работа {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["razdel"] != null)) {
-                    base.Tables.Add(new razdelDataTable(ds.Tables["razdel"]));
+                if ((ds.Tables["product"] != null)) {
+                    base.Tables.Add(new productDataTable(ds.Tables["product"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace курсовая_работа {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablerazdel = ((razdelDataTable)(base.Tables["razdel"]));
+            this.tableproduct = ((productDataTable)(base.Tables["product"]));
             if ((initTable == true)) {
-                if ((this.tablerazdel != null)) {
-                    this.tablerazdel.InitVars();
+                if ((this.tableproduct != null)) {
+                    this.tableproduct.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace курсовая_работа {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "racion_pitaniyaDataSet";
+            this.DataSetName = "racion_pitaniyaDataSet12";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/racion_pitaniyaDataSet.xsd";
+            this.Namespace = "http://tempuri.org/racion_pitaniyaDataSet12.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablerazdel = new razdelDataTable();
-            base.Tables.Add(this.tablerazdel);
+            this.tableproduct = new productDataTable();
+            base.Tables.Add(this.tableproduct);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializerazdel() {
+        private bool ShouldSerializeproduct() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace курсовая_работа {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            racion_pitaniyaDataSet ds = new racion_pitaniyaDataSet();
+            racion_pitaniyaDataSet12 ds = new racion_pitaniyaDataSet12();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,23 +270,33 @@ namespace курсовая_работа {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void razdelRowChangeEventHandler(object sender, razdelRowChangeEvent e);
+        public delegate void productRowChangeEventHandler(object sender, productRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class razdelDataTable : global::System.Data.TypedTableBase<razdelRow> {
+        public partial class productDataTable : global::System.Data.TypedTableBase<productRow> {
             
-            private global::System.Data.DataColumn columnname_razdel;
+            private global::System.Data.DataColumn columnid_product;
+            
+            private global::System.Data.DataColumn columnname_product;
+            
+            private global::System.Data.DataColumn columnFats_product;
+            
+            private global::System.Data.DataColumn columnprotein_product;
+            
+            private global::System.Data.DataColumn columncarbohydrates_product;
+            
+            private global::System.Data.DataColumn columncalories_product;
             
             private global::System.Data.DataColumn columnid_razdel;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public razdelDataTable() {
-                this.TableName = "razdel";
+            public productDataTable() {
+                this.TableName = "product";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +304,7 @@ namespace курсовая_работа {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal razdelDataTable(global::System.Data.DataTable table) {
+            internal productDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,16 +321,56 @@ namespace курсовая_работа {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected razdelDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected productDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn name_razdelColumn {
+            public global::System.Data.DataColumn id_productColumn {
                 get {
-                    return this.columnname_razdel;
+                    return this.columnid_product;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn name_productColumn {
+                get {
+                    return this.columnname_product;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Fats_productColumn {
+                get {
+                    return this.columnFats_product;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn protein_productColumn {
+                get {
+                    return this.columnprotein_product;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn carbohydrates_productColumn {
+                get {
+                    return this.columncarbohydrates_product;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn calories_productColumn {
+                get {
+                    return this.columncalories_product;
                 }
             }
             
@@ -343,53 +393,58 @@ namespace курсовая_работа {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public razdelRow this[int index] {
+            public productRow this[int index] {
                 get {
-                    return ((razdelRow)(this.Rows[index]));
+                    return ((productRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event razdelRowChangeEventHandler razdelRowChanging;
+            public event productRowChangeEventHandler productRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event razdelRowChangeEventHandler razdelRowChanged;
+            public event productRowChangeEventHandler productRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event razdelRowChangeEventHandler razdelRowDeleting;
+            public event productRowChangeEventHandler productRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event razdelRowChangeEventHandler razdelRowDeleted;
+            public event productRowChangeEventHandler productRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddrazdelRow(razdelRow row) {
+            public void AddproductRow(productRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public razdelRow AddrazdelRow(string name_razdel, int id_razdel) {
-                razdelRow rowrazdelRow = ((razdelRow)(this.NewRow()));
+            public productRow AddproductRow(string name_product, decimal Fats_product, decimal protein_product, decimal carbohydrates_product, int calories_product, int id_razdel) {
+                productRow rowproductRow = ((productRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        name_razdel,
+                        null,
+                        name_product,
+                        Fats_product,
+                        protein_product,
+                        carbohydrates_product,
+                        calories_product,
                         id_razdel};
-                rowrazdelRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowrazdelRow);
-                return rowrazdelRow;
+                rowproductRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowproductRow);
+                return rowproductRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public razdelRow FindByid_razdel(int id_razdel) {
-                return ((razdelRow)(this.Rows.Find(new object[] {
-                            id_razdel})));
+            public productRow FindByid_product(int id_product) {
+                return ((productRow)(this.Rows.Find(new object[] {
+                            id_product})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                razdelDataTable cln = ((razdelDataTable)(base.Clone()));
+                productDataTable cln = ((productDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -397,55 +452,77 @@ namespace курсовая_работа {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new razdelDataTable();
+                return new productDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnname_razdel = base.Columns["name_razdel"];
+                this.columnid_product = base.Columns["id_product"];
+                this.columnname_product = base.Columns["name_product"];
+                this.columnFats_product = base.Columns["Fats_product"];
+                this.columnprotein_product = base.Columns["protein_product"];
+                this.columncarbohydrates_product = base.Columns["carbohydrates_product"];
+                this.columncalories_product = base.Columns["calories_product"];
                 this.columnid_razdel = base.Columns["id_razdel"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnname_razdel = new global::System.Data.DataColumn("name_razdel", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnname_razdel);
+                this.columnid_product = new global::System.Data.DataColumn("id_product", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_product);
+                this.columnname_product = new global::System.Data.DataColumn("name_product", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnname_product);
+                this.columnFats_product = new global::System.Data.DataColumn("Fats_product", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFats_product);
+                this.columnprotein_product = new global::System.Data.DataColumn("protein_product", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnprotein_product);
+                this.columncarbohydrates_product = new global::System.Data.DataColumn("carbohydrates_product", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncarbohydrates_product);
+                this.columncalories_product = new global::System.Data.DataColumn("calories_product", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncalories_product);
                 this.columnid_razdel = new global::System.Data.DataColumn("id_razdel", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnid_razdel);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnid_razdel}, true));
-                this.columnname_razdel.AllowDBNull = false;
-                this.columnname_razdel.MaxLength = 50;
-                this.columnid_razdel.AllowDBNull = false;
-                this.columnid_razdel.Unique = true;
+                                this.columnid_product}, true));
+                this.columnid_product.AutoIncrement = true;
+                this.columnid_product.AutoIncrementSeed = -1;
+                this.columnid_product.AutoIncrementStep = -1;
+                this.columnid_product.AllowDBNull = false;
+                this.columnid_product.ReadOnly = true;
+                this.columnid_product.Unique = true;
+                this.columnname_product.MaxLength = 100;
+                this.columnFats_product.AllowDBNull = false;
+                this.columnprotein_product.AllowDBNull = false;
+                this.columncarbohydrates_product.AllowDBNull = false;
+                this.columncalories_product.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public razdelRow NewrazdelRow() {
-                return ((razdelRow)(this.NewRow()));
+            public productRow NewproductRow() {
+                return ((productRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new razdelRow(builder);
+                return new productRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(razdelRow);
+                return typeof(productRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.razdelRowChanged != null)) {
-                    this.razdelRowChanged(this, new razdelRowChangeEvent(((razdelRow)(e.Row)), e.Action));
+                if ((this.productRowChanged != null)) {
+                    this.productRowChanged(this, new productRowChangeEvent(((productRow)(e.Row)), e.Action));
                 }
             }
             
@@ -453,8 +530,8 @@ namespace курсовая_работа {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.razdelRowChanging != null)) {
-                    this.razdelRowChanging(this, new razdelRowChangeEvent(((razdelRow)(e.Row)), e.Action));
+                if ((this.productRowChanging != null)) {
+                    this.productRowChanging(this, new productRowChangeEvent(((productRow)(e.Row)), e.Action));
                 }
             }
             
@@ -462,8 +539,8 @@ namespace курсовая_работа {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.razdelRowDeleted != null)) {
-                    this.razdelRowDeleted(this, new razdelRowChangeEvent(((razdelRow)(e.Row)), e.Action));
+                if ((this.productRowDeleted != null)) {
+                    this.productRowDeleted(this, new productRowChangeEvent(((productRow)(e.Row)), e.Action));
                 }
             }
             
@@ -471,14 +548,14 @@ namespace курсовая_работа {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.razdelRowDeleting != null)) {
-                    this.razdelRowDeleting(this, new razdelRowChangeEvent(((razdelRow)(e.Row)), e.Action));
+                if ((this.productRowDeleting != null)) {
+                    this.productRowDeleting(this, new productRowChangeEvent(((productRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoverazdelRow(razdelRow row) {
+            public void RemoveproductRow(productRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -487,7 +564,7 @@ namespace курсовая_работа {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                racion_pitaniyaDataSet ds = new racion_pitaniyaDataSet();
+                racion_pitaniyaDataSet12 ds = new racion_pitaniyaDataSet12();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -505,7 +582,7 @@ namespace курсовая_работа {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "razdelDataTable";
+                attribute2.FixedValue = "productDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -549,25 +626,85 @@ namespace курсовая_работа {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class razdelRow : global::System.Data.DataRow {
+        public partial class productRow : global::System.Data.DataRow {
             
-            private razdelDataTable tablerazdel;
+            private productDataTable tableproduct;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal razdelRow(global::System.Data.DataRowBuilder rb) : 
+            internal productRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablerazdel = ((razdelDataTable)(this.Table));
+                this.tableproduct = ((productDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string name_razdel {
+            public int id_product {
                 get {
-                    return ((string)(this[this.tablerazdel.name_razdelColumn]));
+                    return ((int)(this[this.tableproduct.id_productColumn]));
                 }
                 set {
-                    this[this.tablerazdel.name_razdelColumn] = value;
+                    this[this.tableproduct.id_productColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string name_product {
+                get {
+                    try {
+                        return ((string)(this[this.tableproduct.name_productColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'name_product\' в таблице \'product\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableproduct.name_productColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal Fats_product {
+                get {
+                    return ((decimal)(this[this.tableproduct.Fats_productColumn]));
+                }
+                set {
+                    this[this.tableproduct.Fats_productColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal protein_product {
+                get {
+                    return ((decimal)(this[this.tableproduct.protein_productColumn]));
+                }
+                set {
+                    this[this.tableproduct.protein_productColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal carbohydrates_product {
+                get {
+                    return ((decimal)(this[this.tableproduct.carbohydrates_productColumn]));
+                }
+                set {
+                    this[this.tableproduct.carbohydrates_productColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int calories_product {
+                get {
+                    return ((int)(this[this.tableproduct.calories_productColumn]));
+                }
+                set {
+                    this[this.tableproduct.calories_productColumn] = value;
                 }
             }
             
@@ -575,11 +712,40 @@ namespace курсовая_работа {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int id_razdel {
                 get {
-                    return ((int)(this[this.tablerazdel.id_razdelColumn]));
+                    try {
+                        return ((int)(this[this.tableproduct.id_razdelColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'id_razdel\' в таблице \'product\' равно DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tablerazdel.id_razdelColumn] = value;
+                    this[this.tableproduct.id_razdelColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isname_productNull() {
+                return this.IsNull(this.tableproduct.name_productColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setname_productNull() {
+                this[this.tableproduct.name_productColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isid_razdelNull() {
+                return this.IsNull(this.tableproduct.id_razdelColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setid_razdelNull() {
+                this[this.tableproduct.id_razdelColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -587,22 +753,22 @@ namespace курсовая_работа {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class razdelRowChangeEvent : global::System.EventArgs {
+        public class productRowChangeEvent : global::System.EventArgs {
             
-            private razdelRow eventRow;
+            private productRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public razdelRowChangeEvent(razdelRow row, global::System.Data.DataRowAction action) {
+            public productRowChangeEvent(productRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public razdelRow Row {
+            public productRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -618,7 +784,7 @@ namespace курсовая_работа {
         }
     }
 }
-namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
+namespace курсовая_работа.racion_pitaniyaDataSet12TableAdapters {
     
     
     /// <summary>
@@ -630,7 +796,7 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class razdelTableAdapter : global::System.ComponentModel.Component {
+    public partial class productTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -644,7 +810,7 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public razdelTableAdapter() {
+        public productTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -741,36 +907,60 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "razdel";
-            tableMapping.ColumnMappings.Add("name_razdel", "name_razdel");
+            tableMapping.DataSetTable = "product";
+            tableMapping.ColumnMappings.Add("id_product", "id_product");
+            tableMapping.ColumnMappings.Add("name_product", "name_product");
+            tableMapping.ColumnMappings.Add("Fats_product", "Fats_product");
+            tableMapping.ColumnMappings.Add("protein_product", "protein_product");
+            tableMapping.ColumnMappings.Add("carbohydrates_product", "carbohydrates_product");
+            tableMapping.ColumnMappings.Add("calories_product", "calories_product");
             tableMapping.ColumnMappings.Add("id_razdel", "id_razdel");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[razdel] WHERE (([name_razdel] = @Original_name_razdel) AND ([i" +
-                "d_razdel] = @Original_id_razdel))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[product] WHERE (([id_product] = @Original_id_product) AND ((@IsNull_name_product = 1 AND [name_product] IS NULL) OR ([name_product] = @Original_name_product)) AND ([Fats_product] = @Original_Fats_product) AND ([protein_product] = @Original_protein_product) AND ([carbohydrates_product] = @Original_carbohydrates_product) AND ([calories_product] = @Original_calories_product) AND ((@IsNull_id_razdel = 1 AND [id_razdel] IS NULL) OR ([id_razdel] = @Original_id_razdel)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_name_razdel", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_razdel", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_product", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_name_product", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_product", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_name_product", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Fats_product", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "Fats_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_protein_product", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "protein_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_carbohydrates_product", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "carbohydrates_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_calories_product", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "calories_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_razdel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_razdel", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_razdel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_razdel", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[razdel] ([name_razdel], [id_razdel]) VALUES (@name_razdel, @id" +
-                "_razdel);\r\nSELECT name_razdel, id_razdel FROM razdel WHERE (id_razdel = @id_razd" +
-                "el)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[product] ([name_product], [Fats_product], [protein_product], [carbohydrates_product], [calories_product], [id_razdel]) VALUES (@name_product, @Fats_product, @protein_product, @carbohydrates_product, @calories_product, @id_razdel);
+SELECT id_product, name_product, Fats_product, protein_product, carbohydrates_product, calories_product, id_razdel FROM product WHERE (id_product = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name_razdel", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_razdel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name_product", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fats_product", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "Fats_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@protein_product", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "protein_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@carbohydrates_product", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "carbohydrates_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@calories_product", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "calories_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_razdel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_razdel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[razdel] SET [name_razdel] = @name_razdel, [id_razdel] = @id_razdel " +
-                "WHERE (([name_razdel] = @Original_name_razdel) AND ([id_razdel] = @Original_id_r" +
-                "azdel));\r\nSELECT name_razdel, id_razdel FROM razdel WHERE (id_razdel = @id_razde" +
-                "l)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[product] SET [name_product] = @name_product, [Fats_product] = @Fats_product, [protein_product] = @protein_product, [carbohydrates_product] = @carbohydrates_product, [calories_product] = @calories_product, [id_razdel] = @id_razdel WHERE (([id_product] = @Original_id_product) AND ((@IsNull_name_product = 1 AND [name_product] IS NULL) OR ([name_product] = @Original_name_product)) AND ([Fats_product] = @Original_Fats_product) AND ([protein_product] = @Original_protein_product) AND ([carbohydrates_product] = @Original_carbohydrates_product) AND ([calories_product] = @Original_calories_product) AND ((@IsNull_id_razdel = 1 AND [id_razdel] IS NULL) OR ([id_razdel] = @Original_id_razdel)));
+SELECT id_product, name_product, Fats_product, protein_product, carbohydrates_product, calories_product, id_razdel FROM product WHERE (id_product = @id_product)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name_razdel", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_razdel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name_product", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fats_product", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "Fats_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@protein_product", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "protein_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@carbohydrates_product", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "carbohydrates_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@calories_product", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "calories_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_razdel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_razdel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_name_razdel", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_razdel", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_product", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_name_product", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_product", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_name_product", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Fats_product", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "Fats_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_protein_product", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "protein_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_carbohydrates_product", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "carbohydrates_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_calories_product", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "calories_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_razdel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_razdel", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_razdel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_razdel", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_product", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -783,22 +973,19 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT name_razdel, id_razdel FROM dbo.razdel";
+            this._commandCollection[0].CommandText = "SELECT id_product, name_product, Fats_product, protein_product, carbohydrates_pro" +
+                "duct, calories_product, id_razdel FROM dbo.product";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT name_razdel, id_razdel FROM dbo.razdel";
-            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(racion_pitaniyaDataSet.razdelDataTable dataTable) {
+        public virtual int Fill(racion_pitaniyaDataSet12.productDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -811,9 +998,9 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual racion_pitaniyaDataSet.razdelDataTable GetData() {
+        public virtual racion_pitaniyaDataSet12.productDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            racion_pitaniyaDataSet.razdelDataTable dataTable = new racion_pitaniyaDataSet.razdelDataTable();
+            racion_pitaniyaDataSet12.productDataTable dataTable = new racion_pitaniyaDataSet12.productDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -821,28 +1008,15 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy(racion_pitaniyaDataSet.razdelDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(racion_pitaniyaDataSet.razdelDataTable dataTable) {
+        public virtual int Update(racion_pitaniyaDataSet12.productDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(racion_pitaniyaDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "razdel");
+        public virtual int Update(racion_pitaniyaDataSet12 dataSet) {
+            return this.Adapter.Update(dataSet, "product");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -864,14 +1038,28 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_name_razdel, int Original_id_razdel) {
-            if ((Original_name_razdel == null)) {
-                throw new global::System.ArgumentNullException("Original_name_razdel");
+        public virtual int Delete(int Original_id_product, string Original_name_product, decimal Original_Fats_product, decimal Original_protein_product, decimal Original_carbohydrates_product, int Original_calories_product, global::System.Nullable<int> Original_id_razdel) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id_product));
+            if ((Original_name_product == null)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_name_razdel));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_name_product));
             }
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_id_razdel));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((decimal)(Original_Fats_product));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((decimal)(Original_protein_product));
+            this.Adapter.DeleteCommand.Parameters[5].Value = ((decimal)(Original_carbohydrates_product));
+            this.Adapter.DeleteCommand.Parameters[6].Value = ((int)(Original_calories_product));
+            if ((Original_id_razdel.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_id_razdel.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -892,14 +1080,23 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string name_razdel, int id_razdel) {
-            if ((name_razdel == null)) {
-                throw new global::System.ArgumentNullException("name_razdel");
+        public virtual int Insert(string name_product, decimal Fats_product, decimal protein_product, decimal carbohydrates_product, int calories_product, global::System.Nullable<int> id_razdel) {
+            if ((name_product == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(name_razdel));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(name_product));
             }
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(id_razdel));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((decimal)(Fats_product));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((decimal)(protein_product));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((decimal)(carbohydrates_product));
+            this.Adapter.InsertCommand.Parameters[4].Value = ((int)(calories_product));
+            if ((id_razdel.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((int)(id_razdel.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -920,21 +1117,45 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string name_razdel, int id_razdel, string Original_name_razdel, int Original_id_razdel) {
-            if ((name_razdel == null)) {
-                throw new global::System.ArgumentNullException("name_razdel");
+        public virtual int Update(string name_product, decimal Fats_product, decimal protein_product, decimal carbohydrates_product, int calories_product, global::System.Nullable<int> id_razdel, int Original_id_product, string Original_name_product, decimal Original_Fats_product, decimal Original_protein_product, decimal Original_carbohydrates_product, int Original_calories_product, global::System.Nullable<int> Original_id_razdel, int id_product) {
+            if ((name_product == null)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(name_razdel));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(name_product));
             }
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(id_razdel));
-            if ((Original_name_razdel == null)) {
-                throw new global::System.ArgumentNullException("Original_name_razdel");
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((decimal)(Fats_product));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((decimal)(protein_product));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(carbohydrates_product));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(calories_product));
+            if ((id_razdel.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(id_razdel.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_name_razdel));
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_id_razdel));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_id_product));
+            if ((Original_name_product == null)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_name_product));
+            }
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((decimal)(Original_Fats_product));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((decimal)(Original_protein_product));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((decimal)(Original_carbohydrates_product));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_calories_product));
+            if ((Original_id_razdel.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_id_razdel.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(id_product));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -955,8 +1176,8 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string name_razdel, string Original_name_razdel, int Original_id_razdel) {
-            return this.Update(name_razdel, Original_id_razdel, Original_name_razdel, Original_id_razdel);
+        public virtual int Update(string name_product, decimal Fats_product, decimal protein_product, decimal carbohydrates_product, int calories_product, global::System.Nullable<int> id_razdel, int Original_id_product, string Original_name_product, decimal Original_Fats_product, decimal Original_protein_product, decimal Original_carbohydrates_product, int Original_calories_product, global::System.Nullable<int> Original_id_razdel) {
+            return this.Update(name_product, Fats_product, protein_product, carbohydrates_product, calories_product, id_razdel, Original_id_product, Original_name_product, Original_Fats_product, Original_protein_product, Original_carbohydrates_product, Original_calories_product, Original_id_razdel, Original_id_product);
         }
     }
     
@@ -972,7 +1193,7 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private razdelTableAdapter _razdelTableAdapter;
+        private productTableAdapter _productTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -994,12 +1215,12 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public razdelTableAdapter razdelTableAdapter {
+        public productTableAdapter productTableAdapter {
             get {
-                return this._razdelTableAdapter;
+                return this._productTableAdapter;
             }
             set {
-                this._razdelTableAdapter = value;
+                this._productTableAdapter = value;
             }
         }
         
@@ -1022,9 +1243,9 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._razdelTableAdapter != null) 
-                            && (this._razdelTableAdapter.Connection != null))) {
-                    return this._razdelTableAdapter.Connection;
+                if (((this._productTableAdapter != null) 
+                            && (this._productTableAdapter.Connection != null))) {
+                    return this._productTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1039,7 +1260,7 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._razdelTableAdapter != null)) {
+                if ((this._productTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1051,14 +1272,14 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(racion_pitaniyaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(racion_pitaniyaDataSet12 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._razdelTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.razdel.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._productTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.product.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._razdelTableAdapter.Update(updatedRows));
+                    result = (result + this._productTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1070,13 +1291,13 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(racion_pitaniyaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(racion_pitaniyaDataSet12 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._razdelTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.razdel.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._productTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.product.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._razdelTableAdapter.Update(addedRows));
+                    result = (result + this._productTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1088,13 +1309,13 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(racion_pitaniyaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(racion_pitaniyaDataSet12 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._razdelTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.razdel.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._productTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.product.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._razdelTableAdapter.Update(deletedRows));
+                    result = (result + this._productTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1130,15 +1351,15 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(racion_pitaniyaDataSet dataSet) {
+        public virtual int UpdateAll(racion_pitaniyaDataSet12 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._razdelTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._razdelTableAdapter.Connection) == false))) {
+            if (((this._productTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._productTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Все адаптеры таблицы, управляемые диспетчером адаптера таблицы TableAdapterManage" +
                         "r, должны использовать одинаковую строку подключения.");
             }
@@ -1174,13 +1395,13 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._razdelTableAdapter != null)) {
-                    revertConnections.Add(this._razdelTableAdapter, this._razdelTableAdapter.Connection);
-                    this._razdelTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._razdelTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._razdelTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._razdelTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._razdelTableAdapter.Adapter);
+                if ((this._productTableAdapter != null)) {
+                    revertConnections.Add(this._productTableAdapter, this._productTableAdapter.Connection);
+                    this._productTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._productTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._productTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._productTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._productTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1241,9 +1462,9 @@ namespace курсовая_работа.racion_pitaniyaDataSetTableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._razdelTableAdapter != null)) {
-                    this._razdelTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._razdelTableAdapter]));
-                    this._razdelTableAdapter.Transaction = null;
+                if ((this._productTableAdapter != null)) {
+                    this._productTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._productTableAdapter]));
+                    this._productTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

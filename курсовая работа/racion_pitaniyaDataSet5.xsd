@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="racion_pitaniyaDataSet" targetNamespace="http://tempuri.org/racion_pitaniyaDataSet.xsd" xmlns:mstns="http://tempuri.org/racion_pitaniyaDataSet.xsd" xmlns="http://tempuri.org/racion_pitaniyaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="racion_pitaniyaDataSet5" targetNamespace="http://tempuri.org/racion_pitaniyaDataSet5.xsd" xmlns:mstns="http://tempuri.org/racion_pitaniyaDataSet5.xsd" xmlns="http://tempuri.org/racion_pitaniyaDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -53,36 +53,27 @@ SELECT name_razdel, id_razdel FROM razdel WHERE (id_razdel = @id_razdel)</Comman
               <Mapping SourceColumn="name_razdel" DataSetColumn="name_razdel" />
               <Mapping SourceColumn="id_razdel" DataSetColumn="id_razdel" />
             </Mappings>
-            <Sources>
-              <DbSource ConnectionRef="racion_pitaniyaConnectionString (Settings)" DbObjectName="racion_pitaniya.dbo.razdel" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT name_razdel, id_razdel FROM dbo.razdel</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </Sources>
+            <Sources />
           </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="racion_pitaniyaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="racion_pitaniyaDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="racion_pitaniyaDataSet">
+  <xs:element name="racion_pitaniyaDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="racion_pitaniyaDataSet5" msprop:Generator_DataSetName="racion_pitaniyaDataSet5">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="razdel" msprop:Generator_RowClassName="razdelRow" msprop:Generator_RowEvHandlerName="razdelRowChangeEventHandler" msprop:Generator_RowDeletedName="razdelRowDeleted" msprop:Generator_RowDeletingName="razdelRowDeleting" msprop:Generator_RowEvArgName="razdelRowChangeEvent" msprop:Generator_TablePropName="razdel" msprop:Generator_RowChangedName="razdelRowChanged" msprop:Generator_UserTableName="razdel" msprop:Generator_RowChangingName="razdelRowChanging" msprop:Generator_TableClassName="razdelDataTable" msprop:Generator_TableVarName="tablerazdel">
+        <xs:element name="razdel" msprop:Generator_RowEvHandlerName="razdelRowChangeEventHandler" msprop:Generator_RowDeletedName="razdelRowDeleted" msprop:Generator_RowDeletingName="razdelRowDeleting" msprop:Generator_RowEvArgName="razdelRowChangeEvent" msprop:Generator_TablePropName="razdel" msprop:Generator_RowChangedName="razdelRowChanged" msprop:Generator_RowChangingName="razdelRowChanging" msprop:Generator_TableClassName="razdelDataTable" msprop:Generator_RowClassName="razdelRow" msprop:Generator_TableVarName="tablerazdel" msprop:Generator_UserTableName="razdel">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="name_razdel" msprop:Generator_UserColumnName="name_razdel" msprop:Generator_ColumnPropNameInTable="name_razdelColumn" msprop:Generator_ColumnPropNameInRow="name_razdel" msprop:Generator_ColumnVarNameInTable="columnname_razdel">
+              <xs:element name="name_razdel" msprop:Generator_ColumnPropNameInRow="name_razdel" msprop:Generator_ColumnPropNameInTable="name_razdelColumn" msprop:Generator_ColumnVarNameInTable="columnname_razdel" msprop:Generator_UserColumnName="name_razdel">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="id_razdel" msprop:Generator_UserColumnName="id_razdel" msprop:Generator_ColumnPropNameInTable="id_razdelColumn" msprop:Generator_ColumnPropNameInRow="id_razdel" msprop:Generator_ColumnVarNameInTable="columnid_razdel" type="xs:int" />
+              <xs:element name="id_razdel" msprop:Generator_ColumnPropNameInRow="id_razdel" msprop:Generator_ColumnPropNameInTable="id_razdelColumn" msprop:Generator_ColumnVarNameInTable="columnid_razdel" msprop:Generator_UserColumnName="id_razdel" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
