@@ -748,7 +748,7 @@ namespace курсовая_работа
             this.radioButtonWoman.TabIndex = 6;
             this.radioButtonWoman.Text = "я женщина";
             this.radioButtonWoman.UseVisualStyleBackColor = true;
-            this.radioButtonWoman.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.radioButtonWoman.CheckedChanged += new System.EventHandler(this.radioButtonWoman_CheckedChanged);
             // 
             // radioButtonMan
             // 
@@ -760,7 +760,7 @@ namespace курсовая_работа
             this.radioButtonMan.TabIndex = 5;
             this.radioButtonMan.Text = "я мужчина";
             this.radioButtonMan.UseVisualStyleBackColor = true;
-            this.radioButtonMan.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButtonMan.CheckedChanged += new System.EventHandler(this.radioButtonMan_CheckedChanged);
             // 
             // label8
             // 
@@ -817,7 +817,7 @@ namespace курсовая_работа
             this.buttonNazat.TabIndex = 1;
             this.buttonNazat.Text = "выход";
             this.buttonNazat.UseVisualStyleBackColor = false;
-            this.buttonNazat.Click += new System.EventHandler(this.button1_Click);
+            this.buttonNazat.Click += new System.EventHandler(this.buttonNazat_Click);
             // 
             // razdelTableAdapter
             // 

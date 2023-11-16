@@ -81,7 +81,7 @@
             this.buttonNazat.TabIndex = 2;
             this.buttonNazat.Text = "выход";
             this.buttonNazat.UseVisualStyleBackColor = false;
-            this.buttonNazat.Click += new System.EventHandler(this.button1_Click_1);
+            this.buttonNazat.Click += new System.EventHandler(this.buttonNazat_Click);
             // 
             // productBindingSource
             // 
@@ -123,7 +123,7 @@
             this.buttonSave.TabIndex = 6;
             this.buttonSave.Text = "сохранить";
             this.buttonSave.UseVisualStyleBackColor = false;
-            this.buttonSave.Click += new System.EventHandler(this.button2_Click_1);
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // button3
             // 
@@ -135,7 +135,7 @@
             this.buttonupdate.TabIndex = 7;
             this.buttonupdate.Text = "обновить";
             this.buttonupdate.UseVisualStyleBackColor = false;
-            this.buttonupdate.Click += new System.EventHandler(this.button3_Click);
+            this.buttonupdate.Click += new System.EventHandler(this.buttonupdate_Click);
             // 
             // productTableAdapter
             // 

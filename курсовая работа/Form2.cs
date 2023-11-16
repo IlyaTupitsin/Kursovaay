@@ -26,7 +26,7 @@ namespace курсовая_работа
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonNazat_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form1 f1 = new Form1();
@@ -34,7 +34,7 @@ namespace курсовая_работа
         }
           
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonMan_CheckedChanged(object sender, EventArgs e)
         {
           
             if (label13.Text == "")
@@ -44,7 +44,7 @@ namespace курсовая_работа
             else
             {
                 int colori = int.Parse(label13.Text);
-                if (radioButton1.Checked)
+                if (radioButtonMan.Checked)
                 {
 
                     int man = 2000;
@@ -61,7 +61,7 @@ namespace курсовая_работа
             }
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonWoman_CheckedChanged(object sender, EventArgs e)
         {
             if (label13.Text == "")
             {
@@ -92,7 +92,7 @@ namespace курсовая_работа
         {
             dataBase.opemConnection();
             var caloriesDay = labelcalories.Text;
-            radioButton1.Checked = false;
+            radioButtonMan.Checked = false;
             radioButtonWoman.Checked = false;
             label2.Text = " Рекомендация по питанию:";
             label13.Text = labelcalories.Text ;
